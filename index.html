@@ -20,7 +20,7 @@
      <div class="container header-container">
      <nav class="navigation">
      <a href="./index.html" class="logo text">
-        <span>Web</span>Studio
+        <span class="span-logo">Web</span>Studio
      </a>
      <ul class="site-nav list">
         <li class="item"><a href="" class="link active">Студия</a></li>
@@ -373,7 +373,7 @@
     <div class="container">
         <div class="footer-address">
     <a href="./index.html" class="logo text">
-        <span>Web</span>Studio
+        <span class="span-logo">Web</span>Studio
      </a>
     <address>
         <p>г. Киев, пр-т Леси Украинки, 26</p>
@@ -425,20 +425,87 @@
               </li>
         </ul>
     </div>
+    <div class="footer-mail">
+      <p class="footer-mail-head">Подпишитесь на рассылку</p>
+      <form action="#" method="GET" class="footer-mail-form">
+        <label class="mail-label">
+          <input type="email" name="user-email" class="footer-input" placeholder="E-mail" required>
+          <button type="submit" class="footer-submit">Подписаться
+            <svg class="send-icon" width="24" height="24"> 
+             <use href="./image/sprite.svg#icon-icon-send"></use>
+            </svg>
+          </button> 
+        </label>
+        </form>
+    </div>
     </div>
 </footer>
+
+
    <div class="backdrop is-hidden" data-modal>
 <div class="modal">
   <button type="button" class="modal-close" data-modal-close>
     <svg class="close-icon">
-      <use href="./image/sprite.svg#icon-close-black-18dp-2-1">
-
+      <use href="./image/sprite.svg#icon-close">
       </use>
     </svg>
   </button>
+  <form action="#" method="GET" class="modal-form">
+  <p class="modal-head">Оставьте свои данные, мы вам перезвоним</p>
+  
+    
+    <label class="modal-label"> Имя
+      <span class="modal-input-wrapper">
+      <input type="text" name="user-name" class="modal-imput" minlength="2" required>
+      <svg class="svg-modal" width="12" height="12">
+        <use href="./image/sprite.svg#icon-name">
+        </use>
+      </svg>
+      </span>
+    </label>
+    <label class="modal-label">Телефон
+      <span class="modal-input-wrapper">
+      <input type="tel" name="user-phone" class="modal-imput" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="050-221-11-11" required>
+      <svg class="svg-modal" width="13" height="13">
+        <use href="./image/sprite.svg#icon-phone">
+        </use>
+      </svg>
+      </span>
+    </label>
+    <label class="modal-label">Почта
+      <span class="modal-input-wrapper">
+      <input type="email" name="user-email" class="modal-imput"  required>
+      <svg class="svg-modal" width="15" height="12">
+        <use href="./image/sprite.svg#icon-mail">
+       </use>
+      </svg>
+      </span>
+    </label>
+  
+  <label class="modal-label">Комментарий
+    <textarea name="user-message" class="modal-comment" placeholder="Введите текст"></textarea>
+  </label>
+  
+  <!-- <input type="checkbox" name="user-polisy" class="modal-checkbox" id="checkbox-policy" required> 
+  <Label form="checkbox-policy" class="modal-checkbox-form">Соглашаюсь с рассылкой и принимаю <a class="checkbox-link" href="">Условия договора</a>
+  </Label>-->
+
+  <label class="check-label">
+    <input class="check-input" type="checkbox">
+    <span class="check-box"></span>
+    Соглашаюсь с рассылкой и принимаю &nbsp; <a class="checkbox-link" href="">Условия договора</a>
+  </label>
+  
+
+  <button type="submit" class="modal-form-btn">Отправить</button>
+  </form>
 </div>
    </div>
 
    <script src="./js/modal.js"></script>
 </body>
 </html>
+
+
+
+
