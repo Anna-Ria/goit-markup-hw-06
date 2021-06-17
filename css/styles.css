@@ -869,9 +869,9 @@ color: var(--accent-color);
         border-color: var(--accent-color)
     }
 
-    .modal-input:required:focus:invalid {
+    /* .modal-input:required:focus:invalid { 
         border-color: red;
-    }
+    }*/
 
 .modal-input-wrapper {
     display: block;
